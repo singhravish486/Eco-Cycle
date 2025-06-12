@@ -82,4 +82,8 @@ Add to Home Screen
 Works offline with cached content
 Optimized for mobile & desktop
 
+for any contact
+emailid- singhravish2900@gmail.com
+insta - ravish_singh486
+
 
