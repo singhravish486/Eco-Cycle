@@ -22,16 +22,19 @@ Eco Cycle is a web-based platform that promotes sustainable living and environme
 | PWA         | Service Workers, Manifest   |
 
 📸 Screenshots
-Landing Page 
+                                  [Landing Page]
+                                  
 ![Landing Page](https://github.com/user-attachments/assets/f8517ec6-3b17-4176-92e7-2049504ff8bb)
 
-Map Integration
+                                  [Map Integration]
+                                  
 ![Map](https://github.com/user-attachments/assets/80753aaa-ae2b-4b50-8332-5f6024952a85)
 
-Dashboard
+                                     [Dashboard]
 ![Dashboard](https://github.com/user-attachments/assets/d89f7682-0d1c-4604-bd35-a825d1c6fbd2)
 
-Leaderboard, Challenges, Recycling Assistant, Activity History
+                    [Leaderboard, Challenges, Recycling Assistant, Activity History]
+                    
 ![Screenshot 2025-06-12 183316](https://github.com/user-attachments/assets/7376b7f3-e00f-4294-ac7e-a2c6eb7ecb43)
 
 
@@ -58,7 +61,7 @@ Make sure you have the following installed:
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/eco-cycle.git
+git clone https://github.com/singhravish486/eco-cycle.git
 cd eco-cycle
 
 # Install dependencies
