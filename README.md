@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌱 Eco Cycle
 
-## Getting Started
+Eco Cycle is a web-based platform that promotes sustainable living and environmental awareness. The project aims to empower individuals and communities to adopt eco-friendly habits through intuitive tools, community engagement, and actionable insights.This project aims to bridge the gap between eco-conscious individuals and actionable sustainability efforts by offering a centralized platform that's interactive, informative, and community-driven.
 
-First, run the development server:
+
+🚀 Features
+
+- ♻️ Track and manage recycling habits
+- 🗺️ Google Maps integration to locate nearby recycling centers
+- 📊 Visualize environmental impact with personalized data insights
+- 🧠 AI-powered sustainability tips (via Replicate.com API)
+- 🌐 Offline accessible & mobile-responsive (PWA support)
+- 👥 Community-driven eco challenges and tips
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology                  |
+|-------------|-----------------------------|
+| Frontend    | Next.js, Tailwind CSS       |
+| Backend     | Supabase, EdgeDB            |
+| Database/API| Google Maps API, Replicate API, PocketBase |
+| PWA         | Service Workers, Manifest   |
+
+📸 Screenshots
+Landing Page 
+![Landing Page](https://github.com/user-attachments/assets/f8517ec6-3b17-4176-92e7-2049504ff8bb)
+
+Map Integration
+![Map](https://github.com/user-attachments/assets/80753aaa-ae2b-4b50-8332-5f6024952a85)
+
+Dashboard
+![Dashboard](https://github.com/user-attachments/assets/d89f7682-0d1c-4604-bd35-a825d1c6fbd2)
+
+Leaderboard, Challenges, Recycling Assistant, Activity History
+![Screenshot 2025-06-12 183316](https://github.com/user-attachments/assets/7376b7f3-e00f-4294-ac7e-a2c6eb7ecb43)
+
+
+🧑‍💻 How It Works
+
+1. **User Registration/Login** (via Supabase authentication)
+2. **Location Services** access for showing nearby recycling centers.
+3. **Recycling Tracker** allows logging daily/weekly recycled material.
+4. **AI Tip Engine** (via Replicate API) generates sustainability tips based on usage.
+5. **Dashboard** summarizes individual progress and community challenges.
+6. **PWA Support** enables offline use, caching key functionality.
+
+🧪 Run Locally
+
+### ⚙️ Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v18 or later)
+- npm (v9 or later)
+- Git
+
+### 📥 Installation Steps
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone the repo
+git clone https://github.com/<your-username>/eco-cycle.git
+cd eco-cycle
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Install dependencies
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Create environment config
+touch .env.local
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+⚙️ Environment Variables
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+REPLICATE_API_TOKEN=your_replicate_api_token
+SUPABASE_URL=your_supabase_url
+SUPABASE_ANON_KEY=your_supabase_anon_key
 
-## Learn More
+📲 PWA Capabilities
 
-To learn more about Next.js, take a look at the following resources:
+Add to Home Screen
+Works offline with cached content
+Optimized for mobile & desktop
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
